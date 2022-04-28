@@ -9,7 +9,7 @@ public class Q2a {
 			boolean b = (hi-lo > 2*e);
 
 			int index = 0;
-			System.out.println("iteration: "+index+", "+b+", " + "high: "+hi+", "+"low:"+lo+", "+b);
+			System.out.println("iteration: "+index+", "+b+", " + "hi: "+hi+", "+"lo:"+lo);
 
 			index++;
 			while (hi-lo > 2*e) {
