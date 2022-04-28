@@ -11,7 +11,8 @@ public class Q2a {
 
 			index++;
 			while (hi-lo > 2*e) {
-				System.out.print("iteration: "+ index+", ");
+				System.out.print("iteration: "+ index+", "+"True, ");
+				System.out.print("f(v): "+ (Math.exp(v)-1/v) +", ");
 				if ((Math.exp(v)-1/v) == 0) {
 					System.out.print("=, ");
 					return v;
@@ -29,6 +30,7 @@ public class Q2a {
 				System.out.print("lo: "+lo+"\n");
 				index++;
 			}
+			System.out.println("iteration: "+ index+", "+"False");
 			return v;
 		}
 
