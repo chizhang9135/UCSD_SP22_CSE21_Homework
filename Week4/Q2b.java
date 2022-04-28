@@ -6,12 +6,14 @@ public class Q2b {
 			double hi = n;
 			double v = (hi+lo)/2;
 
+			boolean b = (hi-lo > 2*e);
+
 			int index = 0;
-			System.out.println("iteration: "+index+", "+"high: "+hi+", "+"low:"+lo);
+			System.out.println("iteration: "+index+", "+b+", "+"high: "+hi+", "+"low:"+lo);
 
 			index++;
 			while (hi-lo > 2*e) {
-				System.out.print("iteration: "+ index+", "+"True, ");
+				System.out.print("iteration: "+ index+", "+"true, ");
 				System.out.print("f(v): "+ (v*v-10) +", ");
 				if (v*v-10 == 0) {
 					System.out.print("=, ");
@@ -26,11 +28,11 @@ public class Q2b {
 					hi = v;
 				}
 				v = (hi+lo)/2;
-				System.out.print("hi: "+hi+",");
+				System.out.print("hi: "+hi+", ");
 				System.out.print("lo: "+lo+"\n");
 				index++;
 			}
-			System.out.println("iteration: "+ index+", "+"False");
+			System.out.println("iteration: "+ index+", "+"false");
 			return v;
 		}
 
